@@ -14,8 +14,9 @@
 .content__paragraph p {
 	color: $secondary;
 	font-family: $main;
-	font-size: 0.9em;
+	font-size: 1.1em;
 	line-height: 1.4em;
+	-webkit-font-smoothing: antialiased;
 }
 
 .content__love {

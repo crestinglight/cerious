@@ -1,0 +1,120 @@
+.l-order p {
+	display: block;
+	margin-bottom: 30px;
+}
+
+.l-order span {
+	display: inline-block;
+	width: calc(25% - 20px);
+	margin-right: 20px;
+}
+
+.l-order input[type="text"],
+.l-order input[type="email"] {
+	display: inline-block;
+	width: calc(75% - 10px);
+	margin-bottom: 32px;
+	padding: 5px;
+}
+
+.l-order .l-message {
+	display: block;
+	margin-bottom: 20px;
+}
+
+.l-order textarea {
+	display: block;
+	width: 100%;
+	resize: vertical;
+}
+
+.l-order__submit {
+	display: block;
+	margin: 40px auto 0px;
+	padding: 10px 20px;
+}
+
+.l-order__specs {
+	display: block;
+}
+
+.l-order__specs select {
+	display: inline-block;
+	width: calc(75% - 10px);
+	margin-bottom: 32px;
+}
+
+span.l-label__longer {
+	display: block;
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+.l-order .l-length__option span {
+	width: 100%;
+}
+
+.l-order__length {
+	display: block;
+}
+
+.l-length__option {
+	display: block;
+	width: 100%;
+	margin-bottom: 10px;
+	position: relative;
+}
+
+.l-order__sizes {
+	margin-bottom: 32px;
+}
+
+.l-length__option span::before,
+.l-length__option span::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 100%;
+}
+
+.l-length__option span.radio::before {
+	left: 0;
+	width: 45px;
+	height: 25px;
+}
+
+.l-length__option span.radio {
+	padding-left: 55px;
+	margin: 0;
+}
+
+.l-length__option span.radio::after {
+  left: 5px;
+  width: 17px;
+  height: 17px;
+}
+
+.l-order__specs select {
+	padding: 10px;
+	min-width: 75%;
+	width: auto;
+}
+
+
+@media (min-width: 800px){
+
+	.l-order p {
+		margin-bottom: 50px;
+	}
+
+	.l-order form {
+		max-width: 600px;
+		margin: 80px auto 0px;
+	}
+
+	.l-order__submit {
+		margin-top: 60px;
+	}
+}

@@ -1,0 +1,131 @@
+.order {
+	color: $secondary;
+	font-family: $accent;
+	font-size: 1.5em;
+	line-height: 1.2em;
+	-webkit-font-smoothing: antialiased;
+}
+
+.order input[type="text"],
+.order input[type="email"],
+.order textarea {
+	background-color: transparent;
+	border: none;
+	border-bottom: 1px dashed $tertiary;
+	color: $secondary;
+	font-family: $main;
+	font-size: 1em;
+	line-height: 1em;
+}
+
+.order textarea {
+	line-height: 1.3em;
+}
+
+.order input[type="text"]:focus,
+.order input[type="email"]:focus,
+.order textarea:focus {
+	outline: none;
+	border-bottom: 1px solid $tertiary;
+}
+
+.order input[type="text"]::-webkit-input-placeholder,
+.order input[type="email"]::-webkit-input-placeholder,
+.order textarea::-webkit-input-placeholder {
+  color: $quaternary;
+}
+
+.order input[type="text"]::-moz-placeholder,
+.order input[type="email"]::-moz-placeholder,
+.order textarea::-moz-placeholder {
+  color: $quaternary;
+}
+
+.order input[type="text"]:-ms-input-placeholder,
+.order input[type="email"]:-ms-input-placeholder,
+.order textarea:-ms-input-placeholder {
+  color: $quaternary;
+}
+
+.order input[type="text"]:-moz-placeholder,
+.order input[type="email"]:-moz-placeholder,
+.order textarea:-moz-placeholder { 
+  color: $quaternary;
+}
+
+.order__submit {
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	color: $tertiary;
+	background-color: transparent;
+	border: 1px solid $tertiary;
+	font-size: 1.2em;
+	font-family: $main;
+	text-transform: uppercase;
+}
+
+.order__sizes {
+	font-size: 0.8em;
+}
+
+// ------------------------------------------ STYLING CHECKBOXES -----------------------------------------------
+
+.order input[type="radio"],
+.order input[type="checkbox"]{
+	display: none;
+}
+
+.order span.radio:hover {
+	cursor: pointer;
+}
+
+.order .length__option span.radio::before {
+	background-color: $lighter;
+	border-radius: 50px;
+}
+
+.order .length__option span.radio::after {
+  border-radius: 10px;
+  background-color: $darker;
+  transition: left .25s, background-color .25s;
+}
+
+.length__option input[type="radio"]:checked + label span.radio::after {
+  left: 22px;
+  background-color: $tertiary;
+}
+
+.order__specs select {
+	-webkit-appearance: none;
+	border-radius: 0px;
+	border: 1px dashed $tertiary;
+	border-left: none;
+	border-right: none;
+	background-color: transparent;
+	color: $secondary;
+	font-family: $accent;
+	font-size: 0.7em;
+
+	background-image: url("assets/images/dropdownArrows.png");
+	background-repeat: no-repeat;
+	background-position: 95% 50%;
+	background-size: 12px auto;
+}
+
+.order__specs select:focus {
+	border: 1px solid $tertiary;
+	outline: none;
+}
+
+@media (min-width: 800px){
+
+	.order__submit {
+		transition: all 0.2s ease;
+	}
+
+	.order__submit:hover {
+		color: $secondary;
+		border: 1px solid $secondary;
+		background-color: $tertiary;
+	}
+}
