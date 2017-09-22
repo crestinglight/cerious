@@ -1,0 +1,38 @@
+.l-error {
+	flex-grow: 1;
+	margin-top: 50px;
+}
+
+.l-body--error {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+.l-wrapper--error {
+	flex-grow: 1;
+}
+
+.l-error h1 {
+	margin-bottom: 60px;
+}
+
+.l-error h2 {
+	display: inline-block;
+	padding: 0px 20px 30px;
+	margin-bottom: 20px;
+}
+
+.l-error a {
+	display: inline-block;
+	padding: 20px 30px;
+	margin-bottom: 50px;
+}
+
+
+@media (min-width: 1200px){
+
+	.l-logo--error img {
+		max-width: 200px;
+	}
+}

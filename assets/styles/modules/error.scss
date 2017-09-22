@@ -1,0 +1,44 @@
+.error {
+	text-align: center;
+}
+
+.error h1 {
+	color: $secondary;
+	font-family: $accent;
+	text-transform: uppercase;
+	font-size: 2em;
+	line-height: 1.3em;
+}
+
+.error h2 {
+	color: $secondary;
+	font-family: $main;
+	-webkit-font-smoothing: antialiased;
+	border-bottom: 1px solid $tertiary;
+}
+
+.error a {
+	color: $tertiary;
+	background-color: transparent;
+	border: 1px solid $tertiary;
+	font-size: 1.2em;
+	line-height: 1.3em;
+	font-family: $main;
+	text-transform: uppercase;
+	transition: 0.3s all ease;
+}
+
+.error a:focus {
+	outline: none;
+	border: none;
+}
+
+
+@media (min-width: 1024px){
+
+	.error a:hover {
+		color: $secondary;
+		border: 1px solid $secondary;
+		background-color: $tertiary;
+	}
+}

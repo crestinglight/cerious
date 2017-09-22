@@ -1,0 +1,36 @@
+.l-thanks {
+	flex-grow: 1;
+	margin-top: 50px;
+}
+
+.l-body--thanks {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+.l-wrapper--thanks {
+	flex-grow: 1;
+}
+
+.l-thanks h1 {
+	margin-bottom: 30px;
+}
+
+.l-thanks p {
+	margin-bottom: 50px;
+}
+
+.l-thanks a {
+	display: inline-block;
+	padding: 20px 30px;
+	margin-bottom: 50px;
+}
+
+
+@media (min-width: 1200px){
+
+	.l-logo--thanks img {
+		max-width: 200px;
+	}
+}

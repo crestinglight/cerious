@@ -199,7 +199,7 @@
 
 				<form action="https://formspree.io/evin.grost@gmail.com" method="POST" class="order__form l-order__form" id="orderForm">
 
-					<input type="hidden" name="_next" value="thanks.html">
+					<input type="hidden" name="_next" value="thanks-order.html">
 
 					<input type="hidden" name="_subject" value="New Cables Order" />
 
@@ -219,12 +219,12 @@
 
 						<span class="l-label__longer">Cables:</span>
 
-						<select class="js-cable__type" required>
+						<select class="js-cable__type" name="Cable Type" form="orderForm" required>
 
-						  <option value="digital">Digital Interconnects</option>
-						  <option value="interconnect">Interconnect</option>
-						  <option value="speaker">Speaker Cables</option>
-						  <option value="acPower">AC Power Cables</option>
+						  <option value="Digital Interconnects">Digital Interconnects</option>
+						  <option value="Interconnect">Interconnect</option>
+						  <option value="Speaker Cables">Speaker Cables</option>
+						  <option value="AC Power Cables">AC Power Cables</option>
 
 						</select>
 
@@ -232,10 +232,10 @@
 
 							<span class="l-label__longer">End Type:</span>
 
-							<select>
+							<select form="orderForm" name="End Type">
 								
-								<option value="single">Single Ended RCA</option>
-								<option value="balanced">Balanced XLR</option>
+								<option value="Single Ended RCA">Single Ended RCA</option>
+								<option value="Balanced XLR">Balanced XLR</option>
 
 							</select>
 
@@ -245,11 +245,11 @@
 
 							<span class="l-label__longer">Termination:</span>
 
-							<select>
+							<select form="orderForm" name="Termination Type">
 								
-								<option value="spades">Spades/Spades</option>
-								<option value="bananas">Bananas/Bananas</option>
-								<option value="spadesBananas">Spades/Bananas</option>
+								<option value="Spades/Spades">Spades/Spades</option>
+								<option value="Bananas/Bananas">Bananas/Bananas</option>
+								<option value="Spades/Bananas">Spades/Bananas</option>
 
 							</select>
 
@@ -259,11 +259,11 @@
 
 							<span class="l-label__longer">Optimization:</span>
 
-							<select>
+							<select form="orderForm" name="Optimization">
 								
-								<option value="red">Red Low Current Optimized</option>
-								<option value="blue">Blue High Current Optimized</option>
-								<option value="yellow">Yellow Power Conditioner Optimized</option>
+								<option value="Red Low Current">Red Low Current Optimized</option>
+								<option value="Blue High Current">Blue High Current Optimized</option>
+								<option value="Yellow Power Conditioner">Yellow Power Conditioner Optimized</option>
 
 							</select>
 
@@ -279,21 +279,21 @@
 
 							<div class="length__option l-length__option">
 
-								<input type="radio" name="meters" value="1 Meter" id="1m">
+								<input type="radio" name="meters" value="1 Meter - $199" id="1m">
 								<label for="1m"><span class="radio"> 1 Meter - $199</span></label>
 							
 							</div>
 
 							<div class="length__option l-length__option">
 
-								<input type="radio" name="meters" value="1.5 Meters" id="1.5m">
+								<input type="radio" name="meters" value="1.5 Meters - $249" id="1.5m">
 								<label for="1.5m"><span class="radio"> 1.5 Meters - $249</span></label>
 							
 							</div>
 
 							<div class="length__option l-length__option">
 
-								<input type="radio" name="meters" value="2 Meters" id="2m">
+								<input type="radio" name="meters" value="2 Meters - $299" id="2m">
 								<label for="2m"><span class="radio"> 2 Meters - $299</span></label>
 							
 							</div>
@@ -304,22 +304,22 @@
 
 							<div class="length__option l-length__option">
 
-								<input type="radio" name="icMeters" value="1 Meter" id="1m">
-								<label for="1m"><span class="radio"> 1 Meter - $349</span></label>
+								<input type="radio" name="icMeters" value="1 Meter - $349" id="1mInterconnect">
+								<label for="1mInterconnect"><span class="radio"> 1 Meter - $349</span></label>
 							
 							</div>
 
 							<div class="length__option l-length__option">
 
-								<input type="radio" name="icMeters" value="1.5 Meters" id="1.5m">
-								<label for="1.5m"><span class="radio"> 1.5 Meters - $399</span></label>
+								<input type="radio" name="icMeters" value="1.5 Meters - $399" id="1.5mInterconnect">
+								<label for="1.5mInterconnect"><span class="radio"> 1.5 Meters - $399</span></label>
 							
 							</div>
 
 							<div class="length__option l-length__option">
 
-								<input type="radio" name="icMeters" value="2 Meters" id="2m">
-								<label for="2m"><span class="radio"> 2 Meters - $449</span></label>
+								<input type="radio" name="icMeters" value="2 Meters - $449" id="2mInterconnect">
+								<label for="2mInterconnect"><span class="radio"> 2 Meters - $449</span></label>
 							
 							</div>
 
@@ -329,28 +329,28 @@
 
 							<div class="length__option l-length__option">
 
-								<input type="radio" name="speakerLength" value="6 Feet" id="6ft">
+								<input type="radio" name="speakerLength" value="6 Feet - $579" id="6ft">
 								<label for="6ft"><span class="radio"> 6 Feet - $579</span></label>
 							
 							</div>
 
 							<div class="length__option l-length__option">
 
-								<input type="radio" name="speakerLength" value="7 Feet" id="7ft">
+								<input type="radio" name="speakerLength" value="7 Feet - $619" id="7ft">
 								<label for="7ft"><span class="radio"> 7 Feet - $619</span></label>
 							
 							</div>
 
 							<div class="length__option l-length__option">
 
-								<input type="radio" name="speakerLength" value="8 Feet" id="8ft">
+								<input type="radio" name="speakerLength" value="8 Feet - $649" id="8ft">
 								<label for="8ft"><span class="radio"> 8 Feet - $649</span></label>
 							
 							</div>
 
 							<div class="length__option l-length__option">
 
-								<input type="radio" name="speakerLength" value="10 Feet" id="10ft">
+								<input type="radio" name="speakerLength" value="10 Feet - $749" id="10ft">
 								<label for="10ft"><span class="radio"> 10 Feet - $749</span></label>
 							
 							</div>
@@ -361,35 +361,35 @@
 
 							<div class="length__option l-length__option">
 
-								<input type="radio" name="acLength" value="4 Foot" id="4foot">
+								<input type="radio" name="acLength" value="4 Foot - $299" id="4foot">
 								<label for="4foot"><span class="radio"> 4 Foot - $299</span></label>
 							
 							</div>
 
 							<div class="length__option l-length__option">
 
-								<input type="radio" name="acLength" value="5 Foot" id="5foot">
+								<input type="radio" name="acLength" value="5 Foot - $349" id="5foot">
 								<label for="5foot"><span class="radio"> 5 Foot - $349</span></label>
 							
 							</div>
 
 							<div class="length__option l-length__option">
 
-								<input type="radio" name="acLength" value="6 Foot" id="6foot">
+								<input type="radio" name="acLength" value="6 Foot - $399" id="6foot">
 								<label for="6foot"><span class="radio"> 6 Foot - $399</span></label>
 							
 							</div>
 
 							<div class="length__option l-length__option">
 
-								<input type="radio" name="acLength" value="7 Foot" id="7foot">
+								<input type="radio" name="acLength" value="7 Foot - $449" id="7foot">
 								<label for="7foot"><span class="radio"> 7 Foot - $449</span></label>
 							
 							</div>
 
 							<div class="length__option l-length__option">
 
-								<input type="radio" name="acLength" value="8 Foot" id="8foot">
+								<input type="radio" name="acLength" value="8 Foot - $499" id="8foot">
 								<label for="8foot"><span class="radio"> 8 Foot - $499</span></label>
 							
 							</div>
@@ -400,9 +400,9 @@
 
 					<span class="l-message">Message:</span>
 
-					<textarea form="contactForm" name="message" rows="4" placeholder="Anything else we need to know?"></textarea>
+					<textarea form="orderForm" name="message" rows="4" placeholder="Anything else we need to know?"></textarea>
 
-					<input class="contact__submit l-contact__submit" type="submit" name="submit" value="Place Order">
+					<input class="order__submit l-order__submit" type="submit" value="Place Order">
 
 				</form>
 
@@ -433,7 +433,7 @@
 					<span class="l-message">Message*:</span>
 					<textarea form="contactForm" name="message" rows="4" placeholder="Send us a message..." required></textarea>
 
-					<input class="contact__submit l-contact__submit" type="submit" name="submit" value="Submit">
+					<input class="contact__submit l-contact__submit" type="submit" value="Submit">
 
 				</form>
 

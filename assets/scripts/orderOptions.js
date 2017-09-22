@@ -20,19 +20,19 @@ window.addEventListener("load", function(){
 
 		switch (selected){
 
-			case "digital":
+			case "Digital Interconnects":
 				selectedDigital();
 				break;
 
-			case "interconnect":
+			case "Interconnect":
 				selectedInterconnect();
 				break;
 
-			case "speaker":
+			case "Speaker Cables":
 				selectedSpeaker();
 				break;
 
-			case "acPower":
+			case "AC Power Cables":
 				selectedAC();
 				break;
 		}

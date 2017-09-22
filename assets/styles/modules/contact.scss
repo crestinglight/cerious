@@ -64,6 +64,11 @@
 	text-transform: uppercase;
 }
 
+.contact__submit:focus {
+	outline: none;
+	border: none;
+}
+
 @media (min-width: 800px){
 
 	.contact__submit {

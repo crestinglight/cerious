@@ -64,6 +64,11 @@
 	text-transform: uppercase;
 }
 
+.order__submit:focus {
+	outline: none;
+	border: none;
+}
+
 .order__sizes {
 	font-size: 0.8em;
 }
@@ -83,17 +88,22 @@
 	background-color: $lighter;
 	border-radius: 50px;
 	border: 1px solid $darker;
+	transition: all .25s ease;
 }
 
 .order .length__option span.radio::after {
-  border-radius: 10px;
-  background-color: $darker;
-  transition: left .25s, background-color .25s;
+	border-radius: 10px;
+	background-color: $darker;
+	transition: left .25s, background-color .25s;
 }
 
 .length__option input[type="radio"]:checked + label span.radio::after {
-  left: 22px;
-  background-color: $tertiary;
+	left: 22px;
+	background-color: $tertiary;
+}
+
+.length__option input[type="radio"]:checked + label span.radio::before {
+	border: 1px solid $tertiary;
 }
 
 .order__specs select {
