@@ -12,8 +12,8 @@
 }
 
 .l-navigation--mobile ul li a {
-	display: inline-block;
-	padding: 15px;
+	display: block;
+	padding: 20px;
 }
 
 .l-hero {
@@ -32,15 +32,6 @@
 	.l-navigation--mobile ul {
 		max-width: 500px;
 		margin: 0px auto;
-	}
-
-	.l-navigation--mobile ul li {
-		display: inline-block;
-		margin: 10px 20px;
-	}
-
-	.l-navigation--mobile ul li a {
-		display: inline-block;
 	}
 }
 

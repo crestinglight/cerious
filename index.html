@@ -3,8 +3,9 @@
 <head>
 	<title>Welcome to Cerious Technologies</title>
 	<link rel="stylesheet" type="text/css" href="styles.css">
-	<link href="https://fonts.googleapis.com/css?family=Noto+Sans|Lato" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Oswald|Lato" rel="stylesheet">
 	<link rel="icon" type="image/png" href="assets/images/Cerious/favicon.ico">
+	<script type="text/javascript" src="assets/scripts/orderOptions.js"></script>
 </head>
 <body>
 
@@ -20,15 +21,71 @@
 
 			</div>
 
+			<div class="navigation--mobile l-navigation--mobile">
+
+				<ul>
+
+					<li>
+						<a href="#products">Products</a>
+					</li>
+
+					<li>
+						<a href="#order">Order</a>
+					</li>
+
+					<li>
+						<a href="#about">About</a>
+					</li>
+
+					<li>
+						<a href="#contact">Contact</a>
+					</li>
+
+				</ul>
+
+			</div>
+
 		</div>
 
 		<div class="header--desktop l-header--desktop">
+
+			<div class="header__links--left l-header__links--left">
+
+				<ul>
+
+					<li>
+						<a href="#products">Products</a>
+					</li>
+
+					<li>
+						<a href="#order">Order</a>
+					</li>
+
+				</ul>
+
+			</div>
 
 			<div class="logo l-logo">
 
 				<a href="index.html">
 					<img src="assets/images/Cerious/Logo_Square_White.png">
 				</a>
+
+			</div>
+
+			<div class="header__links--right l-header__links--right">
+
+				<ul>
+
+					<li>
+						<a href="#about">About</a>
+					</li>
+
+					<li>
+						<a href="#contact">Contact</a>
+					</li>
+
+				</ul>
 
 			</div>
 
@@ -60,7 +117,7 @@
 
 		</div>
 
-		<div class="content__block l-content__block">
+		<div class="content__block l-content__block" id="products">
 
 			<h1>What We Offer</h1>
 
@@ -84,7 +141,7 @@
 
 				<div class="cables__option l-cables__option">
 
-					<img src="assets/images/icon_graphic.png" class="float--right">
+					<img src="assets/images/icon_chain.png" class="float--right">
 
 					<div class="cables__text l-cables__text">
 
@@ -100,7 +157,7 @@
 
 				<div class="cables__option l-cables__option">
 
-					<img src="assets/images/icon_graphic.png" class="float--left">
+					<img src="assets/images/icon_cord.png" class="float--left">
 
 					<div class="cables__text l-cables__text">
 
@@ -116,7 +173,7 @@
 
 				<div class="cables__option l-cables__option">
 
-					<img src="assets/images/icon_graphic.png" class="float--right">
+					<img src="assets/images/icon_power.png" class="float--right">
 
 					<div class="cables__text l-cables__text">
 
@@ -148,11 +205,11 @@
 
 					<span>Name*:</span>
 
-					<input type="text" name="yourName" placeholder="Your Full Name" required>
+					<input type="text" name="yourName" placeholder="Full Name" required>
 
 					<span>Email*:</span>
 
-					<input type="email" name="_replyto" placeholder="Your Email" required>
+					<input type="email" name="_replyto" placeholder="Email" required>
 
 					<span>Phone:</span>
 
@@ -162,7 +219,7 @@
 
 						<span class="l-label__longer">Cables:</span>
 
-						<select required>
+						<select class="js-cable__type" required>
 
 						  <option value="digital">Digital Interconnects</option>
 						  <option value="interconnect">Interconnect</option>
@@ -171,7 +228,7 @@
 
 						</select>
 
-						<div class="js-end__type" style="display: none;">
+						<div class="js-option js-end__type">
 
 							<span class="l-label__longer">End Type:</span>
 
@@ -184,7 +241,7 @@
 
 						</div>
 
-						<div class="js-termination" style="display: none;">
+						<div class="js-option js-termination" style="display: none;">
 
 							<span class="l-label__longer">Termination:</span>
 
@@ -198,7 +255,7 @@
 
 						</div>
 
-						<div class="js-optimization" style="display: none;">
+						<div class="js-option js-optimization" style="display: none;">
 
 							<span class="l-label__longer">Optimization:</span>
 
@@ -218,97 +275,122 @@
 
 						<span class="l-label__longer">Length:</span>
 
-						<div class="order__sizes l-order__sizes js-order__defaultSizes">
+						<div class="order__sizes l-order__sizes js-length js-order__defaultSizes">
 
 							<div class="length__option l-length__option">
 
 								<input type="radio" name="meters" value="1 Meter" id="1m">
-								<label for="1m"><span class="radio"> 1 Meter</span></label>
+								<label for="1m"><span class="radio"> 1 Meter - $199</span></label>
 							
 							</div>
 
 							<div class="length__option l-length__option">
 
 								<input type="radio" name="meters" value="1.5 Meters" id="1.5m">
-								<label for="1.5m"><span class="radio"> 1.5 Meters</span></label>
+								<label for="1.5m"><span class="radio"> 1.5 Meters - $249</span></label>
 							
 							</div>
 
 							<div class="length__option l-length__option">
 
 								<input type="radio" name="meters" value="2 Meters" id="2m">
-								<label for="2m"><span class="radio"> 2 Meters</span></label>
+								<label for="2m"><span class="radio"> 2 Meters - $299</span></label>
 							
 							</div>
 
 						</div>
 
-						<div class="order__sizes l-order__sizes js-order__speakerSizes" style="display: none;">
+						<div class="order__sizes l-order__sizes js-length js-order__interconnectSizes" style="display: none;">
+
+							<div class="length__option l-length__option">
+
+								<input type="radio" name="icMeters" value="1 Meter" id="1m">
+								<label for="1m"><span class="radio"> 1 Meter - $349</span></label>
+							
+							</div>
+
+							<div class="length__option l-length__option">
+
+								<input type="radio" name="icMeters" value="1.5 Meters" id="1.5m">
+								<label for="1.5m"><span class="radio"> 1.5 Meters - $399</span></label>
+							
+							</div>
+
+							<div class="length__option l-length__option">
+
+								<input type="radio" name="icMeters" value="2 Meters" id="2m">
+								<label for="2m"><span class="radio"> 2 Meters - $449</span></label>
+							
+							</div>
+
+						</div>
+
+						<div class="order__sizes l-order__sizes js-length js-order__speakerSizes" style="display: none;">
 
 							<div class="length__option l-length__option">
 
 								<input type="radio" name="speakerLength" value="6 Feet" id="6ft">
-								<label for="6ft"><span class="radio"> 6 Feet</span></label>
+								<label for="6ft"><span class="radio"> 6 Feet - $579</span></label>
 							
 							</div>
 
 							<div class="length__option l-length__option">
 
 								<input type="radio" name="speakerLength" value="7 Feet" id="7ft">
-								<label for="7ft"><span class="radio"> 7 Feet</span></label>
+								<label for="7ft"><span class="radio"> 7 Feet - $619</span></label>
 							
 							</div>
 
 							<div class="length__option l-length__option">
 
 								<input type="radio" name="speakerLength" value="8 Feet" id="8ft">
-								<label for="8ft"><span class="radio"> 8 Feet</span></label>
+								<label for="8ft"><span class="radio"> 8 Feet - $649</span></label>
 							
 							</div>
 
 							<div class="length__option l-length__option">
 
 								<input type="radio" name="speakerLength" value="10 Feet" id="10ft">
-								<label for="10ft"><span class="radio"> 10 Feet</span></label>
+								<label for="10ft"><span class="radio"> 10 Feet - $749</span></label>
 							
 							</div>
 
 						</div>
 
-						<div class="order__sizes l-order__sizes js-order__acSizes" style="display: none;">
+						<div class="order__sizes l-order__sizes js-length js-order__acSizes" style="display: none;">
 
 							<div class="length__option l-length__option">
 
 								<input type="radio" name="acLength" value="4 Foot" id="4foot">
-								<label for="4foot"><span class="radio"> 4 Foot</span></label>
+								<label for="4foot"><span class="radio"> 4 Foot - $299</span></label>
 							
 							</div>
 
 							<div class="length__option l-length__option">
 
 								<input type="radio" name="acLength" value="5 Foot" id="5foot">
-								<label for="5foot"><span class="radio"> 5 Foot</span></label>
+								<label for="5foot"><span class="radio"> 5 Foot - $349</span></label>
 							
 							</div>
 
 							<div class="length__option l-length__option">
 
 								<input type="radio" name="acLength" value="6 Foot" id="6foot">
-								<label for="6foot"><span class="radio"> 6 Foot</span></label>
+								<label for="6foot"><span class="radio"> 6 Foot - $399</span></label>
 							
 							</div>
 
 							<div class="length__option l-length__option">
 
 								<input type="radio" name="acLength" value="7 Foot" id="7foot">
-								<label for="7foot"><span class="radio"> 7 Foot</span></label>
+								<label for="7foot"><span class="radio"> 7 Foot - $449</span></label>
 							
 							</div>
 
 							<div class="length__option l-length__option">
 
 								<input type="radio" name="acLength" value="8 Foot" id="8foot">
-								<label for="8foot"><span class="radio"> 8 Foot</span></label>
+								<label for="8foot"><span class="radio"> 8 Foot - $499</span></label>
 							
 							</div>
 
@@ -318,7 +400,7 @@
 
 					<span class="l-message">Message:</span>
 
-					<textarea form="contactForm" name="message" rows="4" placeholder="Let us know if there's anything else you need..." required></textarea>
+					<textarea form="contactForm" name="message" rows="4" placeholder="Anything else we need to know?"></textarea>
 
 					<input class="contact__submit l-contact__submit" type="submit" name="submit" value="Place Order">
 
@@ -385,6 +467,8 @@
 			</div>
 
 			<div class="footer__links l-footer__links">
+
+				<a href="#products">Products</a>
 				
 				<a href="#order">Order</a>
 

@@ -82,6 +82,7 @@
 .order .length__option span.radio::before {
 	background-color: $lighter;
 	border-radius: 50px;
+	border: 1px solid $darker;
 }
 
 .order .length__option span.radio::after {
@@ -105,6 +106,7 @@
 	color: $secondary;
 	font-family: $accent;
 	font-size: 0.7em;
+	letter-spacing: 0.5px;
 
 	background-image: url("assets/images/dropdownArrows.png");
 	background-repeat: no-repeat;
