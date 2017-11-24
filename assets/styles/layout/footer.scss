@@ -16,14 +16,14 @@
 
 .l-footer__socials a {
 	display: inline-block;
-	max-width: 60px;
-	padding: 10px;
+	max-width: 100px;
+	padding: 15px;
 	margin-bottom: 20px;
 }
 
 .l-footer__links a {
 	display: block;
-	padding: 20px;
+	padding: 10px 15px;
 }
 
 
@@ -48,15 +48,10 @@
 
 	.l-footer__socials a {
 		margin-bottom: 0px;
-		max-width: 50px;
-	}
-
-	.l-footer__links {
 	}
 
 	.l-footer__links a {
 		display: inline-block;
-		padding: 8px;
 		font-size: 12px;
 	}
 }

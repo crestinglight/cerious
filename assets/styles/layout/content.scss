@@ -1,12 +1,19 @@
 .l-content__block::before {
 	display: block;
 	width: 40%;
-	height: 1px;
+	height: 3px;
 	margin: 125px auto 0px;
 }
 
 .l-content__block h1 {
-	margin: 40px 0px;
+	margin: 40px 0px 80px;
+}
+
+.content__block h2::after {
+	height: 3px;
+	max-width: 40px;
+	margin: 20px auto;
+	display: block;
 }
 
 .l-content__paragraph img {

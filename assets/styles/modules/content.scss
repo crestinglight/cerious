@@ -6,10 +6,23 @@
 .content__block h1 {
 	color: $secondary;
 	font-family: $accent;
-	font-size: 1.5em;
+	font-size: 72px;
 	text-transform: uppercase;
 	text-align: center;
 	letter-spacing: 1px;
+}
+
+.content__block h2 {
+	color: $secondary;
+	font-family: $main;
+	font-size: 48px;
+	text-align: center;
+	letter-spacing: 1px;
+}
+
+.content__block h2::after {
+	content: "";
+	background-color: $tertiary;
 }
 
 .content__paragraph p {
