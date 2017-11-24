@@ -257,7 +257,7 @@ img {
 
 .l-contact .l-message {
   display: block;
-  margin-bottom: 20px; }
+  margin-bottom: 50px; }
 
 .l-contact textarea {
   display: block;
@@ -624,9 +624,13 @@ body {
 .contact {
   color: #f2f2f2;
   font-family: "Oswald", sans-serif;
-  font-size: 1.5em;
   line-height: 1.2em;
   -webkit-font-smoothing: antialiased; }
+
+.contact p {
+  font-size: 40px;
+  font-family: "Lato", sans-serif;
+  line-height: 1.4em; }
 
 .contact input[type="text"],
 .contact input[type="email"],
@@ -636,8 +640,11 @@ body {
   border-bottom: 3px dashed #f97a25;
   color: #f2f2f2;
   font-family: "Lato", sans-serif;
-  font-size: 1em;
+  font-size: 48px;
   line-height: 1em; }
+
+.contact span {
+  font-size: 48px; }
 
 .contact textarea {
   line-height: 1.3em; }
