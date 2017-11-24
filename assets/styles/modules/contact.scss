@@ -11,7 +11,7 @@
 .contact textarea {
 	background-color: transparent;
 	border: none;
-	border-bottom: 1px dashed $tertiary;
+	border-bottom: 3px dashed $tertiary;
 	color: $secondary;
 	font-family: $main;
 	font-size: 1em;
@@ -26,7 +26,7 @@
 .contact input[type="email"]:focus,
 .contact textarea:focus {
 	outline: none;
-	border-bottom: 1px solid $tertiary;
+	border-bottom: 3px solid $tertiary;
 }
 
 .contact input[type="text"]::-webkit-input-placeholder,
@@ -58,8 +58,8 @@
 	-webkit-appearance: none;
 	color: $tertiary;
 	background-color: transparent;
-	border: 1px solid $tertiary;
-	font-size: 1.2em;
+	border: 3px solid $tertiary;
+	font-size: 40px;
 	font-family: $main;
 	text-transform: uppercase;
 }
@@ -77,7 +77,7 @@
 
 	.contact__submit:hover {
 		color: $secondary;
-		border: 1px solid $secondary;
+		border: 3px solid $secondary;
 		background-color: $tertiary;
 	}
 }

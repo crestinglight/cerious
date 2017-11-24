@@ -21,3 +21,14 @@
 strong {
 	font-weight: bold;
 }
+
+.learn {
+	font-size: 40px;
+	color: $tertiary;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.learn span {
+	border: 3px solid $tertiary;
+}

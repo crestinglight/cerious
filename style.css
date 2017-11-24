@@ -305,6 +305,13 @@ img {
 .l-product__wrapper {
   margin-top: 130px; }
 
+.l-learn {
+  display: block;
+  margin: 100px 0px; }
+
+.l-learn span {
+  padding: 20px 30px; }
+
 .l-order p {
   display: block;
   margin-bottom: 30px; }
@@ -626,7 +633,7 @@ body {
 .contact textarea {
   background-color: transparent;
   border: none;
-  border-bottom: 1px dashed #f97a25;
+  border-bottom: 3px dashed #f97a25;
   color: #f2f2f2;
   font-family: "Lato", sans-serif;
   font-size: 1em;
@@ -639,7 +646,7 @@ body {
 .contact input[type="email"]:focus,
 .contact textarea:focus {
   outline: none;
-  border-bottom: 1px solid #f97a25; }
+  border-bottom: 3px solid #f97a25; }
 
 .contact input[type="text"]::-webkit-input-placeholder,
 .contact input[type="email"]::-webkit-input-placeholder,
@@ -666,8 +673,8 @@ body {
   -webkit-appearance: none;
   color: #f97a25;
   background-color: transparent;
-  border: 1px solid #f97a25;
-  font-size: 1.2em;
+  border: 3px solid #f97a25;
+  font-size: 40px;
   font-family: "Lato", sans-serif;
   text-transform: uppercase; }
 
@@ -681,7 +688,7 @@ body {
 
   .contact__submit:hover {
     color: #f2f2f2;
-    border: 1px solid #f2f2f2;
+    border: 3px solid #f2f2f2;
     background-color: #f97a25; } }
 .cables {
   font-family: "Lato", sans-serif;
@@ -703,6 +710,15 @@ body {
 strong {
   font-weight: bold; }
 
+.learn {
+  font-size: 40px;
+  color: #f97a25;
+  text-align: center;
+  text-transform: uppercase; }
+
+.learn span {
+  border: 3px solid #f97a25; }
+
 .order {
   color: #f2f2f2;
   font-family: "Oswald", sans-serif;
@@ -715,7 +731,7 @@ strong {
 .order textarea {
   background-color: transparent;
   border: none;
-  border-bottom: 1px dashed #f97a25;
+  border-bottom: 3px dashed #f97a25;
   color: #f2f2f2;
   font-family: "Lato", sans-serif;
   font-size: 1em;
@@ -728,7 +744,7 @@ strong {
 .order input[type="email"]:focus,
 .order textarea:focus {
   outline: none;
-  border-bottom: 1px solid #f97a25; }
+  border-bottom: 3px solid #f97a25; }
 
 .order input[type="text"]::-webkit-input-placeholder,
 .order input[type="email"]::-webkit-input-placeholder,
@@ -755,8 +771,8 @@ strong {
   -webkit-appearance: none;
   color: #f97a25;
   background-color: transparent;
-  border: 1px solid #f97a25;
-  font-size: 1.2em;
+  border: 3px solid #f97a25;
+  font-size: 40px;
   font-family: "Lato", sans-serif;
   text-transform: uppercase; }
 
@@ -795,7 +811,7 @@ strong {
 .order__specs select {
   -webkit-appearance: none;
   border-radius: 0px;
-  border: 1px dashed #f97a25;
+  border: 3px dashed #f97a25;
   border-left: none;
   border-right: none;
   background-color: transparent;
@@ -809,7 +825,7 @@ strong {
   background-size: 12px auto; }
 
 .order__specs select:focus {
-  border: 1px solid #f97a25;
+  border: 3px solid #f97a25;
   outline: none; }
 
 @media (min-width: 800px) {
