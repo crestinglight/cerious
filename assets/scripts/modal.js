@@ -18,4 +18,9 @@ window.addEventListener("load", function(){
 		}
 	}
 
+	function closeModal(e){
+
+		e.preventDefault();
+	}
+
 });
