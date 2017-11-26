@@ -37,6 +37,7 @@
 	.l-order {
 		display: flex;
 		flex-wrap: wrap;
+		justify-content: space-between;
 	}
 
 	.l-order h2 {
@@ -46,8 +47,7 @@
 
 	.l-order__product {
 		max-width: calc(50% - 60px);
-		margin: 30px;
-		margin-bottom: 0px;
+		margin-top: 30px;
 	}
 
 	.l-order__product tr {
@@ -60,5 +60,6 @@
 
 	.l-order__product select {
 		padding: 10px 40px 10px 20px;
+		min-width: 100%;
 	}
 }

@@ -445,7 +445,8 @@ img {
 @media (min-width: 1024px) {
   .l-order {
     display: flex;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    justify-content: space-between; }
 
   .l-order h2 {
     display: block;
@@ -453,8 +454,7 @@ img {
 
   .l-order__product {
     max-width: calc(50% - 60px);
-    margin: 30px;
-    margin-bottom: 0px; }
+    margin-top: 30px; }
 
   .l-order__product tr {
     margin: 20px 0px 15px; }
@@ -463,7 +463,8 @@ img {
     margin: 15px 0px; }
 
   .l-order__product select {
-    padding: 10px 40px 10px 20px; } }
+    padding: 10px 40px 10px 20px;
+    min-width: 100%; } }
 .l-footer::before {
   position: relative;
   top: -6px;
