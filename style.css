@@ -333,7 +333,7 @@ img {
 
 .l-buy--modal {
   display: block;
-  margin: 80px 0px 30px; }
+  margin: 40px 0px 0px; }
 
 .l-buy--modal a {
   padding: 5px 40px 12px; }
@@ -342,7 +342,18 @@ img {
   display: none; }
 
 .l-buy--modal input[type="image"] {
-  max-width: 50%; }
+  max-width: 50%;
+  margin-top: 30px; }
+
+.l-buy--modal table {
+  border-collapse: separate;
+  border-spacing: 20px 10px; }
+
+.l-buy--modal td:first-child {
+  margin-right: 20px; }
+
+.l-buy--modal select {
+  padding: 10px 60px 10px 20px; }
 
 .l-cables img {
   width: 50%;
@@ -714,12 +725,19 @@ body {
 .buy--modal {
   text-align: center; }
 
-.buy--modal a {
-  font-family: "Oswald", sans-serif;
-  text-transform: uppercase;
-  color: #f97a25;
-  border: 3px solid #f97a25;
-  font-size: 70px; }
+.buy--modal td {
+  text-align: left; }
+
+.buy--modal select {
+  color: #282828;
+  font-family: "Lato", sans-serif;
+  font-size: 40px;
+  border: 3px solid #282828;
+  border-radius: 75px;
+  background-image: url("assets/images/Cerious/select-arrows-modal.png");
+  background-position: calc(100% - 25px) 50%;
+  background-repeat: no-repeat;
+  background-size: auto 70%; }
 
 .cables {
   font-family: "Lato", sans-serif;

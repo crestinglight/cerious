@@ -20,10 +20,19 @@
 	text-align: center;
 }
 
-.buy--modal a {
-	font-family: $accent;
-	text-transform: uppercase;
-	color: $tertiary;
-	border: 3px solid $tertiary;
-	font-size: 70px;
+.buy--modal td {
+	text-align: left;
+}
+
+.buy--modal select {
+	color: $primary;
+	font-family: $main;
+	font-size: 40px;
+	border: 3px solid $primary;
+	border-radius: 75px;
+
+	background-image: url("assets/images/Cerious/select-arrows-modal.png");
+	background-position: calc(100% - 25px) 50%;
+	background-repeat: no-repeat;
+	background-size: auto 70%;
 }

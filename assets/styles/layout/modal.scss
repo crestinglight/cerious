@@ -60,7 +60,7 @@
 
 .l-buy--modal {
 	display: block;
-	margin: 80px 0px 30px;
+	margin: 40px 0px 0px;
 }
 
 .l-buy--modal a {
@@ -73,4 +73,18 @@
 
 .l-buy--modal input[type="image"] {
 	max-width: 50%;
+	margin-top: 30px;
+}
+
+.l-buy--modal table {
+	border-collapse: separate;
+	border-spacing: 20px 10px;
+}
+
+.l-buy--modal td:first-child {
+	margin-right: 20px;
+}
+
+.l-buy--modal select {
+	padding: 10px 60px 10px 20px;
 }
