@@ -10,17 +10,30 @@
 }
 
 .order__product table {
-	font-size: 48px;
+	font-size: 52px;
 	color: $secondary;
 	font-family: $main;
+	letter-spacing: 2px;
 }
 
 .order__product select {
 	font-size: 48px;
 	color: $secondary;
 	font-family: $main;
+	border: 3px solid $tertiary;
+	background-color: transparent;
+	border-radius: 100px;
+	background-image: url("assets/images/Cerious/select-arrows.png");
+	background-position: calc(100% - 25px) 50%;
+	background-repeat: no-repeat;
+	background-size: auto 70%;
+}
+
+.order__product select:focus {
+	outline: none;
 }
 
 .order__product optgroup {
 	font-size: 14px;
 }
+
