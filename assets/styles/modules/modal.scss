@@ -1,0 +1,29 @@
+.modal__wrapper {
+	background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal {
+	background-color: $secondary;
+	color: $primary;
+	font-family: $main;
+	font-size: 40px;
+	line-height: 1.3em;
+}
+
+.modal h1 {
+	font-family: $accent;
+	text-align: center;
+	font-size: 60px;
+}
+
+.buy--modal {
+	text-align: center;
+}
+
+.buy--modal a {
+	font-family: $accent;
+	text-transform: uppercase;
+	color: $tertiary;
+	border: 3px solid $tertiary;
+	font-size: 70px;
+}

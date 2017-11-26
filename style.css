@@ -279,6 +279,68 @@ img {
 
   .l-contact__submit {
     margin-top: 60px; } }
+.l-modal__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 100vw;
+  min-height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  padding: 50px; }
+
+.l-modal {
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 100px);
+  max-height: calc(100vh - 100px);
+  min-width: 100%;
+  padding: 50px;
+  overflow: hidden;
+  position: relative; }
+
+.l-modal h1 {
+  display: block;
+  margin: 50px 0px; }
+
+.l-modal img {
+  display: block;
+  margin: 0px auto;
+  max-width: 70%; }
+
+.l-modal__close {
+  display: block;
+  position: absolute;
+  z-index: 6;
+  top: 0;
+  right: 0;
+  padding: 40px;
+  max-width: 150px; }
+
+.l-modal__close img {
+  display: block;
+  max-width: 100%; }
+
+.l-modal__content {
+  overflow: auto;
+  padding-bottom: 20px; }
+
+.l-modal__description {
+  overflow-y: auto;
+  max-height: 100%; }
+
+.l-buy--modal {
+  display: block;
+  margin: 80px 0px 30px; }
+
+.l-buy--modal a {
+  padding: 5px 40px 12px; }
+
+.l-modal__wrapper {
+  display: none; }
+
 .l-cables img {
   width: 50%;
   max-width: 280px;
@@ -311,6 +373,9 @@ img {
 
 .l-learn span {
   padding: 20px 30px; }
+
+.l-cables__section {
+  margin-top: 180px; }
 
 .l-order p {
   display: block;
@@ -536,7 +601,7 @@ body {
 .header--mobile {
   font-family: "Oswald", sans-serif;
   color: #f2f2f2;
-  font-size: 1.5em;
+  font-size: 48px;
   text-transform: uppercase; }
 
 .hero {
@@ -596,7 +661,8 @@ body {
   font-family: "Lato", sans-serif;
   font-size: 48px;
   text-align: center;
-  letter-spacing: 1px; }
+  letter-spacing: 1px;
+  -webkit-font-smoothing: antialiased; }
 
 .content__block h2::after {
   content: "";
@@ -681,7 +747,7 @@ body {
   color: #f97a25;
   background-color: transparent;
   border: 3px solid #f97a25;
-  font-size: 40px;
+  font-size: 54px;
   font-family: "Lato", sans-serif;
   text-transform: uppercase; }
 
@@ -697,6 +763,31 @@ body {
     color: #f2f2f2;
     border: 3px solid #f2f2f2;
     background-color: #f97a25; } }
+.modal__wrapper {
+  background-color: rgba(0, 0, 0, 0.4); }
+
+.modal {
+  background-color: #f2f2f2;
+  color: #282828;
+  font-family: "Lato", sans-serif;
+  font-size: 40px;
+  line-height: 1.3em; }
+
+.modal h1 {
+  font-family: "Oswald", sans-serif;
+  text-align: center;
+  font-size: 60px; }
+
+.buy--modal {
+  text-align: center; }
+
+.buy--modal a {
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  color: #f97a25;
+  border: 3px solid #f97a25;
+  font-size: 70px; }
+
 .cables {
   font-family: "Lato", sans-serif;
   color: #f2f2f2;
@@ -779,7 +870,7 @@ strong {
   color: #f97a25;
   background-color: transparent;
   border: 3px solid #f97a25;
-  font-size: 40px;
+  font-size: 54px;
   font-family: "Lato", sans-serif;
   text-transform: uppercase; }
 
