@@ -32,3 +32,25 @@ strong {
 .learn span {
 	border: 3px solid $tertiary;
 }
+
+
+@media (min-width: 1024px){
+
+	.cables h3 {
+		font-size: 28px;
+	}
+
+	.cables p {
+		font-size: 18px;
+		text-align: left;
+		line-height: 1.2em;
+	}
+
+	.learn {
+		font-size: 24px;
+	}
+
+	.learn span {
+		border: 1px solid $tertiary;
+	}
+}

@@ -43,3 +43,39 @@
 .l-cables__section {
 	margin-top: 180px;
 }
+
+
+@media (min-width: 1024px){
+
+	.l-cables {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.l-product__wrapper {
+		margin: 40px 30px 40px;
+		max-width: calc(50% - 60px);
+	}
+
+	.l-product {
+		display: flex;
+		flex-direction: column;
+		min-height: 100%;
+	}
+
+	.l-cables h3 {
+		margin: 20px 0px 30px;
+	}
+
+	.l-cables p {
+		flex-grow: 1;
+	}
+
+	.l-learn {
+		margin: 20px 0px;
+	}
+
+	.l-learn span {
+		padding: 10px 20px;
+	}
+}

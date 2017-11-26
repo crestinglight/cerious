@@ -51,5 +51,16 @@
 
 @media (min-width: 1024px){
 
-	
+	.content__block h1 {
+		font-size: 44px;
+	}
+
+	.content__block h2 {
+		font-size: 34px;
+	}
+
+	.content__paragraph p {
+		font-size: 20px;
+		line-height: 1.1em;
+	}
 }

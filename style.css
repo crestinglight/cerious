@@ -391,6 +391,31 @@ img {
 .l-cables__section {
   margin-top: 180px; }
 
+@media (min-width: 1024px) {
+  .l-cables {
+    display: flex;
+    flex-wrap: wrap; }
+
+  .l-product__wrapper {
+    margin: 40px 30px 40px;
+    max-width: calc(50% - 60px); }
+
+  .l-product {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%; }
+
+  .l-cables h3 {
+    margin: 20px 0px 30px; }
+
+  .l-cables p {
+    flex-grow: 1; }
+
+  .l-learn {
+    margin: 20px 0px; }
+
+  .l-learn span {
+    padding: 10px 20px; } }
 .l-order__product {
   display: block;
   margin-top: 100px; }
@@ -417,6 +442,28 @@ img {
   margin: 50px auto 0px;
   width: 70%; }
 
+@media (min-width: 1024px) {
+  .l-order {
+    display: flex;
+    flex-wrap: wrap; }
+
+  .l-order h2 {
+    display: block;
+    min-width: 100%; }
+
+  .l-order__product {
+    max-width: calc(50% - 60px);
+    margin: 30px;
+    margin-bottom: 0px; }
+
+  .l-order__product tr {
+    margin: 20px 0px 15px; }
+
+  .l-order__product h3 {
+    margin: 15px 0px; }
+
+  .l-order__product select {
+    padding: 10px 40px 10px 20px; } }
 .l-footer::before {
   position: relative;
   top: -6px;
@@ -631,6 +678,16 @@ body {
   font-size: 1.2em;
   line-height: 1.3em; }
 
+@media (min-width: 1024px) {
+  .content__block h1 {
+    font-size: 44px; }
+
+  .content__block h2 {
+    font-size: 34px; }
+
+  .content__paragraph p {
+    font-size: 20px;
+    line-height: 1.1em; } }
 .contact {
   color: #f2f2f2;
   font-family: "Oswald", sans-serif;
@@ -768,6 +825,20 @@ strong {
 .learn span {
   border: 3px solid #f97a25; }
 
+@media (min-width: 1024px) {
+  .cables h3 {
+    font-size: 28px; }
+
+  .cables p {
+    font-size: 18px;
+    text-align: left;
+    line-height: 1.2em; }
+
+  .learn {
+    font-size: 24px; }
+
+  .learn span {
+    border: 1px solid #f97a25; } }
 .order__product {
   text-align: center; }
 
@@ -793,7 +864,8 @@ strong {
   background-image: url("assets/images/Cerious/select-arrows.png");
   background-position: calc(100% - 25px) 50%;
   background-repeat: no-repeat;
-  background-size: auto 70%; }
+  background-size: auto 70%;
+  -webkit-appearance: none; }
 
 .order__product select:focus {
   outline: none; }
@@ -801,6 +873,19 @@ strong {
 .order__product optgroup {
   font-size: 14px; }
 
+@media (min-width: 1024px) {
+  .order__product h3 {
+    font-size: 28px; }
+
+  .order__product table {
+    font-size: 24px;
+    -webkit-font-smoothing: antialiased; }
+
+  .order__product select {
+    font-size: 16px;
+    border: 1px solid #f97a25;
+    background-position: calc(100% - 15px) 50%;
+    background-size: auto 60%; } }
 .footer::before {
   content: "";
   display: block;

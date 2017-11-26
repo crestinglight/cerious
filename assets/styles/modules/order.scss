@@ -27,6 +27,8 @@
 	background-position: calc(100% - 25px) 50%;
 	background-repeat: no-repeat;
 	background-size: auto 70%;
+
+	-webkit-appearance: none;
 }
 
 .order__product select:focus {
@@ -37,3 +39,23 @@
 	font-size: 14px;
 }
 
+
+@media (min-width: 1024px){
+
+	.order__product h3 {
+		font-size: 28px;
+	}
+
+	.order__product table {
+		font-size: 24px;
+		-webkit-font-smoothing: antialiased;
+	}
+
+	.order__product select {
+		font-size: 16px;
+		border: 1px solid $tertiary;
+
+		background-position: calc(100% - 15px) 50%;
+		background-size: auto 60%;
+	}
+}
