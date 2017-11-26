@@ -54,7 +54,7 @@
 }
 
 .l-modal__description {
-	overflow-y: auto;
+	overflow-y: scroll;
 	max-height: 100%;
 }
 
@@ -69,4 +69,8 @@
 
 .l-modal__wrapper {
 	display: none;
+}
+
+.l-buy--modal input[type="image"] {
+	max-width: 50%;
 }
