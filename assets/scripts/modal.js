@@ -30,7 +30,7 @@ window.addEventListener("load", function(){
 
 		if(modalDisplay === "none"){
 
-			modalBG.style.display = "block";
+			modalBG.style.display = "flex";
 		}
 	}
 

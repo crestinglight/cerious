@@ -20,6 +20,8 @@
 	padding: 50px;
 	overflow: hidden;
 	position: relative;
+	pointer-events: none;
+	z-index: 12;
 }
 
 .l-modal h1 {
@@ -41,6 +43,7 @@
 	right: 0;
 	padding: 40px;
 	max-width: 150px;
+	pointer-events: auto;
 }
 
 .l-modal__close img {
@@ -87,4 +90,27 @@
 
 .l-buy--modal select {
 	padding: 10px 60px 10px 20px;
+}
+
+
+@media (min-width: 1024px){
+
+	.l-modal {
+		max-width: 50%;
+		min-width: 0px;
+		padding: 50px 20px 20px;
+	}
+
+	.l-modal__close {
+		padding: 10px;
+		max-width: 50px;
+	}
+
+	.l-modal img {
+		max-width: 200px;
+	}
+
+	.l-modal__description {
+		overflow-y: auto;
+	}
 }

@@ -238,6 +238,9 @@ img {
     margin: 70px auto; } }
 @media (min-width: 1024px) {
   .l-content {
+    max-width: 800px; }
+
+  .l-content__block {
     max-width: 800px; } }
 .l-contact p {
   display: block;
@@ -299,7 +302,9 @@ img {
   min-width: 100%;
   padding: 50px;
   overflow: hidden;
-  position: relative; }
+  position: relative;
+  pointer-events: none;
+  z-index: 12; }
 
 .l-modal h1 {
   display: block;
@@ -317,7 +322,8 @@ img {
   top: 0;
   right: 0;
   padding: 40px;
-  max-width: 150px; }
+  max-width: 150px;
+  pointer-events: auto; }
 
 .l-modal__close img {
   display: block;
@@ -355,6 +361,21 @@ img {
 .l-buy--modal select {
   padding: 10px 60px 10px 20px; }
 
+@media (min-width: 1024px) {
+  .l-modal {
+    max-width: 50%;
+    min-width: 0px;
+    padding: 50px 20px 20px; }
+
+  .l-modal__close {
+    padding: 10px;
+    max-width: 50px; }
+
+  .l-modal img {
+    max-width: 200px; }
+
+  .l-modal__description {
+    overflow-y: auto; } }
 .l-cables img {
   width: 50%;
   max-width: 280px;
@@ -423,6 +444,9 @@ img {
 .l-order__product h3 {
   margin: 40px 0px; }
 
+.l-order__product h3 {
+  margin: 30px 0px; }
+
 .l-order__product table {
   width: 100%; }
 
@@ -452,19 +476,32 @@ img {
     display: block;
     min-width: 100%; }
 
+  .l-order__product h3 {
+    margin: 40px 0px 10px; }
+
+  .l-order__product h4 {
+    margin: 0px 0px 30px; }
+
   .l-order__product {
     max-width: calc(50% - 60px);
-    margin-top: 30px; }
+    margin-top: 60px; }
+
+  .l-order__product table {
+    text-align: left; }
 
   .l-order__product tr {
     margin: 20px 0px 15px; }
 
-  .l-order__product h3 {
-    margin: 15px 0px; }
+  .l-order__product td {
+    display: block; }
 
   .l-order__product select {
     padding: 10px 40px 10px 20px;
-    min-width: 100%; } }
+    min-width: 100%; }
+
+  .l-order__product input[type="image"] {
+    max-width: 50%;
+    margin: 30px auto 0px; } }
 .l-footer::before {
   position: relative;
   top: -6px;
@@ -792,11 +829,19 @@ body {
   font-size: 40px;
   border: 3px solid #282828;
   border-radius: 75px;
+  -webkit-appearance: none;
   background-image: url("assets/images/Cerious/select-arrows-modal.png");
   background-position: calc(100% - 25px) 50%;
   background-repeat: no-repeat;
   background-size: auto 70%; }
 
+@media (min-width: 1024px) {
+  .buy--modal select {
+    font-size: 16px;
+    border: 1px solid #282828;
+    background-position: calc(100% - 15px) 50%;
+    background-repeat: no-repeat;
+    background-size: auto 70%; } }
 .cables {
   font-family: "Lato", sans-serif;
   color: #f2f2f2;
@@ -849,6 +894,12 @@ strong {
   -webkit-font-smoothing: antialiased;
   font-size: 64px; }
 
+.order__product h4 {
+  color: #f2f2f2;
+  font-family: "Oswald", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-size: 55px; }
+
 .order__product table {
   font-size: 52px;
   color: #f2f2f2;
@@ -876,7 +927,11 @@ strong {
 
 @media (min-width: 1024px) {
   .order__product h3 {
-    font-size: 28px; }
+    font-size: 28px;
+    line-height: 1.3em; }
+
+  .order__product h4 {
+    font-size: 24px; }
 
   .order__product table {
     font-size: 24px;

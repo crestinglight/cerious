@@ -9,6 +9,13 @@
 	font-size: 64px;
 }
 
+.order__product h4 {
+	color: $secondary;
+	font-family: $accent;
+	-webkit-font-smoothing: antialiased;
+	font-size: 55px;
+}
+
 .order__product table {
 	font-size: 52px;
 	color: $secondary;
@@ -44,6 +51,11 @@
 
 	.order__product h3 {
 		font-size: 28px;
+		line-height: 1.3em;
+	}
+
+	.order__product h4 {
+		font-size: 24px;
 	}
 
 	.order__product table {
