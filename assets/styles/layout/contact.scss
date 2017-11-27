@@ -34,10 +34,23 @@
 	padding: 10px 20px;
 }
 
-@media (min-width: 800px){
+@media (min-width: 1024px){
 
 	.l-contact p {
 		margin-bottom: 50px;
+	}
+
+	.l-contact span {
+		width: calc(20% - 20px);
+	}
+
+	.l-contact input[type="text"],
+	.l-contact input[type="email"] {
+		width: calc(80% - 10px);
+	}
+
+	.l-contact .l-message {
+		margin-bottom: 20px;
 	}
 
 	.l-contact form {
