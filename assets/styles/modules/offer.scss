@@ -33,6 +33,20 @@ strong {
 	border: 3px solid $tertiary;
 }
 
+.upgrade {
+	font-size: 40px;
+	font-family: $accent;
+	text-transform: uppercase;
+	color: $tertiary;
+	text-align: center;
+	letter-spacing: 2px;
+	-webkit-font-smoothing: antialiased;
+}
+
+.upgrade a {
+	border: 3px solid $tertiary;
+}
+
 
 @media (min-width: 1024px){
 
@@ -56,6 +70,21 @@ strong {
 	}
 
 	.learn span:hover {
+		color: $secondary;
+		border: 1px solid $secondary;
+		background-color: $tertiary;
+	}
+
+	.upgrade {
+		font-size: 24px;
+	}
+
+	.upgrade a {
+		border: 1px solid $tertiary;
+		transition: all 0.2s ease;
+	}
+
+	.upgrade a:hover {
 		color: $secondary;
 		border: 1px solid $secondary;
 		background-color: $tertiary;
