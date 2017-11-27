@@ -596,6 +596,17 @@ img {
 @media (min-width: 800px) {
   .l-footer__content {
     padding: 0px 30px; } }
+@media (min-width: 1024px) {
+  .l-footer::before {
+    height: 10px; }
+
+  .l-footer__socials a {
+    max-width: 50px;
+    padding: 10px; }
+
+  .l-footer__content {
+    padding: 0px 15px;
+    margin: 0px; } }
 .l-thanks {
   flex-grow: 1;
   margin-top: 50px; }
@@ -1043,8 +1054,9 @@ strong {
 .footer__links a {
   font-size: 36px; }
 
-@media (min-width: 800px) {
+@media (min-width: 1024px) {
   .footer__links a {
+    font-size: 18px;
     transition: color 0.3s ease; }
 
   .footer__links a:hover {

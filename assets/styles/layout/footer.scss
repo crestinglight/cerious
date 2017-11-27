@@ -62,3 +62,20 @@
 		padding: 0px 30px;
 	}
 }
+
+@media (min-width: 1024px){
+
+	.l-footer::before {
+		height: 10px;
+	}
+
+	.l-footer__socials a {
+		max-width: 50px;
+		padding: 10px;
+	}
+
+	.l-footer__content {
+		padding: 0px 15px;
+		margin: 0px;
+	}
+}

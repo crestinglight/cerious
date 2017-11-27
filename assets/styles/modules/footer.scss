@@ -21,9 +21,10 @@
 	font-size: 36px;
 }
 
-@media (min-width: 800px){
+@media (min-width: 1024px){
 
 	.footer__links a {
+		font-size: 18px;
 		transition: color 0.3s ease;
 	}
 
