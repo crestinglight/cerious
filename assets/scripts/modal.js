@@ -2,11 +2,11 @@ window.addEventListener("load", function(){
 
 	var modalBG = document.getElementsByClassName("js-modalBG")[0];
 
-	var trigger = document.getElementsByClassName("js-modalTrigger")[0];
+	var trigger = document.getElementsByClassName("js-modalTrigger");
 
-	var closer = document.getElementsByClassName("js-modal__close")[0];
+	var closer = document.getElementsByClassName("js-modal__close");
 
-	var modalWrapper = document.getElementsByClassName("js-modal")[0];
+	var modalWrapper = document.getElementsByClassName("js-modal");
 
 	if(modalBG != null){
 
@@ -16,40 +16,52 @@ window.addEventListener("load", function(){
 
 	if(trigger != null){
 
-		trigger.addEventListener("click", openModal);
+		for(var i = 0; i < trigger.length; i++){
+
+			trigger[i].addEventListener("click", function(event){
+
+				event.preventDefault();
+
+				var clicked = this;
+
+				determineModal(event, clicked); 
+			});
+		}
 	}
 	
 	if(closer != null){
 
-		closer.addEventListener("click", closeModal);
+		for(var i = 0; i < closer.length; i++){
+
+			closer[i].addEventListener("click", closeModal);
+		}
 	}
 
-	function openModal(e){
+	function determineModal(e, clicked){
 
-		e.preventDefault();
+		var modalID = clicked.dataset.id;
 
-		var modalDisplay = window.getComputedStyle(modalBG).getPropertyValue('display');
+		openModal(modalID);
+	}
 
-		if(modalDisplay === "none"){
+	function openModal(modal){
 
-			modalBG.style.display = "block";
+		modalBG.style.display = "block";
 
-			modalWrapper.style.display = "flex";
-		}
+		var showModal = document.getElementById(modal);
+
+		showModal.style.display = "flex";
 	}
 
 	function closeModal(e){
 
 		e.preventDefault();
 
-		var modalDisplay = window.getComputedStyle(modalBG).getPropertyValue('display');
+		modalBG.style.display = "none";
 
-		if(modalDisplay != "none"){
+		for(var i = 0; i < modalWrapper.length; i++){
 
-			modalBG.style.display = "none";
-
-			modalWrapper.style.display = "none";
-
+			modalWrapper[i].style.display = "none";
 		}
 	}
 

@@ -52,5 +52,12 @@ strong {
 
 	.learn span {
 		border: 1px solid $tertiary;
+		transition: all 0.2s ease;
+	}
+
+	.learn span:hover {
+		color: $secondary;
+		border: 1px solid $secondary;
+		background-color: $tertiary;
 	}
 }
