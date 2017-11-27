@@ -6,6 +6,8 @@ window.addEventListener("load", function(){
 
 	var closer = document.getElementsByClassName("js-modal__close")[0];
 
+	var modalWrapper = document.getElementsByClassName("js-modal")[0];
+
 	if(modalBG != null){
 
 		modalBG.addEventListener("click", closeModal);
@@ -30,7 +32,9 @@ window.addEventListener("load", function(){
 
 		if(modalDisplay === "none"){
 
-			modalBG.style.display = "flex";
+			modalBG.style.display = "block";
+
+			modalWrapper.style.display = "flex";
 		}
 	}
 
@@ -43,6 +47,8 @@ window.addEventListener("load", function(){
 		if(modalDisplay != "none"){
 
 			modalBG.style.display = "none";
+
+			modalWrapper.style.display = "none";
 
 		}
 	}

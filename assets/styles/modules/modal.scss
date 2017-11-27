@@ -1,4 +1,4 @@
-.modal__wrapper {
+.modal__BG {
 	background-color: rgba(0, 0, 0, 0.4);
 }
 
@@ -48,5 +48,9 @@
 		background-position: calc(100% - 15px) 50%;
 		background-repeat: no-repeat;
 		background-size: auto 70%;
+	}
+
+	.buy--modal select:focus {
+		outline: none;
 	}
 }

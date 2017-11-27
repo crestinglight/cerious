@@ -1,5 +1,15 @@
+.l-modal__BG {
+	display: none;
+	min-width: 100vw;
+	min-height: 100vh;
+	position: fixed;
+	z-index: 2;
+	top: 0;
+	left: 0;
+}
+
 .l-modal__wrapper {
-	display: flex;
+	display: none;
 	justify-content: center;
 	align-items: center;
 	min-width: 100vw;
@@ -9,6 +19,8 @@
 	left: 0;
 	z-index: 5;
 	padding: 50px;
+
+	pointer-events: none;
 }
 
 .l-modal {
@@ -20,8 +32,8 @@
 	padding: 50px;
 	overflow: hidden;
 	position: relative;
-	pointer-events: none;
 	z-index: 12;
+	pointer-events: auto;
 }
 
 .l-modal h1 {
@@ -38,7 +50,7 @@
 .l-modal__close {
 	display: block;
 	position: absolute;
-	z-index: 6;
+	z-index: 15;
 	top: 0;
 	right: 0;
 	padding: 40px;
@@ -54,11 +66,13 @@
 .l-modal__content {
 	overflow: auto;
 	padding-bottom: 20px;
+	pointer-events: none;
 }
 
 .l-modal__description {
 	overflow-y: scroll;
 	max-height: 100%;
+	pointer-events: none;
 }
 
 .l-buy--modal {

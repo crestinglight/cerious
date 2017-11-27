@@ -282,8 +282,17 @@ img {
 
   .l-contact__submit {
     margin-top: 60px; } }
+.l-modal__BG {
+  display: none;
+  min-width: 100vw;
+  min-height: 100vh;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0; }
+
 .l-modal__wrapper {
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   min-width: 100vw;
@@ -292,7 +301,8 @@ img {
   top: 0;
   left: 0;
   z-index: 5;
-  padding: 50px; }
+  padding: 50px;
+  pointer-events: none; }
 
 .l-modal {
   display: flex;
@@ -303,8 +313,8 @@ img {
   padding: 50px;
   overflow: hidden;
   position: relative;
-  pointer-events: none;
-  z-index: 12; }
+  z-index: 12;
+  pointer-events: auto; }
 
 .l-modal h1 {
   display: block;
@@ -318,7 +328,7 @@ img {
 .l-modal__close {
   display: block;
   position: absolute;
-  z-index: 6;
+  z-index: 15;
   top: 0;
   right: 0;
   padding: 40px;
@@ -331,11 +341,13 @@ img {
 
 .l-modal__content {
   overflow: auto;
-  padding-bottom: 20px; }
+  padding-bottom: 20px;
+  pointer-events: none; }
 
 .l-modal__description {
   overflow-y: scroll;
-  max-height: 100%; }
+  max-height: 100%;
+  pointer-events: none; }
 
 .l-buy--modal {
   display: block;
@@ -802,7 +814,7 @@ body {
     color: #f2f2f2;
     border: 3px solid #f2f2f2;
     background-color: #f97a25; } }
-.modal__wrapper {
+.modal__BG {
   background-color: rgba(0, 0, 0, 0.4); }
 
 .modal {
@@ -841,7 +853,10 @@ body {
     border: 1px solid #282828;
     background-position: calc(100% - 15px) 50%;
     background-repeat: no-repeat;
-    background-size: auto 70%; } }
+    background-size: auto 70%; }
+
+  .buy--modal select:focus {
+    outline: none; } }
 .cables {
   font-family: "Lato", sans-serif;
   color: #f2f2f2;
