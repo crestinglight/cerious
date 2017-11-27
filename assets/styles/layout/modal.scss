@@ -74,6 +74,10 @@
 	pointer-events: none;
 }
 
+.l-modal__description p {
+	margin-bottom: 1em;
+}
+
 .l-modal__description ul {
 	margin-left: 60px;
 	margin-top: 40px;
@@ -101,6 +105,10 @@
 	margin-top: 30px;
 }
 
+.l-buy--modal a {
+	padding: 20px 30px;
+}
+
 .l-buy--modal table {
 	border-collapse: separate;
 	border-spacing: 20px 10px;
@@ -108,6 +116,11 @@
 
 .l-buy--modal select {
 	padding: 10px 60px 10px 20px;
+}
+
+.l-get__started {
+	display: block;
+	margin-top: 20px
 }
 
 

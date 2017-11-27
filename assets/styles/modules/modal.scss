@@ -34,12 +34,24 @@
 	font-size: 40px;
 	border: 3px solid $primary;
 	border-radius: 75px;
+	background-color: $secondary;
 	-webkit-appearance: none;
 
 	background-image: url("assets/images/Cerious/select-arrows-modal.png");
 	background-position: calc(100% - 25px) 50%;
 	background-repeat: no-repeat;
 	background-size: auto 70%;
+}
+
+.buy--modal a {
+	font-family: $accent;
+	font-size: 50px;
+	color: $tertiary;
+	text-align: center;
+	text-transform: uppercase;
+	border: 3px solid $tertiary;
+	-webkit-font-smoothing: antialiased;
+	letter-spacing: 2px;
 }
 
 
@@ -69,5 +81,10 @@
 
 	.buy--modal select:focus {
 		outline: none;
+	}
+
+	.buy--modal a {
+		font-size: 18px;
+		border: 1px solid $tertiary;
 	}
 }
