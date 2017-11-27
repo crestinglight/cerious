@@ -1,0 +1,17 @@
+.preheader {
+	background-color: $tertiary;
+	font-family: $accent;
+	color: $secondary;
+	text-align: right;
+	font-size: 18px;
+	font-style: italic;
+}
+
+
+@media (min-width: 1024px){
+
+	.preheader a {
+		text-align: center;
+		line-height: 1.2em;
+	}
+}

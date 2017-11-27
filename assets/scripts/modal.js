@@ -8,6 +8,8 @@ window.addEventListener("load", function(){
 
 	var modalWrapper = document.getElementsByClassName("js-modal");
 
+	var tradeIn = document.getElementsByClassName("js-tradeIn")[0];
+
 	if(modalBG != null){
 
 		modalBG.addEventListener("click", closeModal);
@@ -37,6 +39,11 @@ window.addEventListener("load", function(){
 		}
 	}
 
+	if (tradeIn != null){
+
+		tradeIn.addEventListener("click", startTradeIn);
+	}
+
 	function determineModal(e, clicked){
 
 		var modalID = clicked.dataset.id;
@@ -63,6 +70,13 @@ window.addEventListener("load", function(){
 
 			modalWrapper[i].style.display = "none";
 		}
+	}
+
+	function startTradeIn(){
+
+		var contactMessage = document.getElementsByClassName("js-tradeSpecial")[0];
+
+		contactMessage.value = "I'd like to trade in my old cables. Let's get started!";
 	}
 
 });
