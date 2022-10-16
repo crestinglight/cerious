@@ -26,6 +26,19 @@
 	letter-spacing: 1px;
 }
 
+.special__banner {
+	font-family: $main;
+	font-size: 18px;
+	color: $secondary;
+	background-color: $special_banner;
+
+	.action__btn {
+		font-family: $secondary;
+		text-transform: uppercase;
+		border: 1px solid $secondary;
+	}
+}
+
 
 @media (min-width: 650px){
 
