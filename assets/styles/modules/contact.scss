@@ -78,6 +78,33 @@
 	border: none;
 }
 
+.contact__info {
+	font-size: 1em !important;
+	display: inline-flex !important;
+	flex-direction: column;
+
+	a {
+		display: inline-flex;
+		align-items: center;
+		margin-bottom: 0.35em;
+	}
+
+	img {
+		width: 16px;
+		margin-right: 0.5em;
+	}
+
+	span {
+		font-size: 1em !important;
+		display: block;
+		width: 100%;
+
+		&.nudge--right {
+			margin-left: 24px;
+		}
+	}
+}
+
 @media (min-width: 1024px){
 
 	.contact p {
