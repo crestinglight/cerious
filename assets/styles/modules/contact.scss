@@ -79,7 +79,6 @@
 }
 
 .contact__info {
-	font-size: 1em !important;
 	display: inline-flex !important;
 	flex-direction: column;
 
@@ -90,7 +89,8 @@
 	}
 
 	img {
-		width: 16px;
+		width: 42px;
+		margin-top: 6px;
 		margin-right: 0.5em;
 	}
 
@@ -139,5 +139,14 @@
 		color: $secondary;
 		border: 1px solid $secondary;
 		background-color: $tertiary;
+	}
+
+	.contact__info {
+		font-size: 1em !important;
+
+		img {
+			width: 16px;
+			margin-top: 0;
+		}
 	}
 }
